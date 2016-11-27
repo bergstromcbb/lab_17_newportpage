@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+  <link rel="icon" type="image/png" href="circle.png" sizes="32x32" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="lib/angular.min.js"></script>
+  <script src="lib/angular-route.min.js"></script>
+  <script src="lib/bootbox.min.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body ng-app="mainApp">
+
+  <ul class="baritself">
+    <li class='bar'><a class="topbar" href="index.html">Home</a></li>
+    <li class='bar'><a class="topbar" href="about.html">About</a></li>
+    <li class='bar'><a class="topbar active" href="portfolio.html">Portfolio</a></li>
+    <li class='bar'><a class="topbar" href="resume.html">Resume</a></li>
+  </ul>
+
+  <img src="images/pinkwatercolor.jpg" class="topgraphic">
+  <h1>Portfolio Page</h1>
+
+  <div id="overallcontainer" ng-controller="infoSectionCtrl">
+      <project class="project" ng-repeat="section in sectionInfo">
+      </project>
+    </div>
+  <img src="images/transbottompinkwatercolor.png" class="bottombar">
+
+</body>
+
+</html>
+
+
+
+
+
+
+
