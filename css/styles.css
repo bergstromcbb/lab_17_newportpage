@@ -3,8 +3,14 @@
 	src: url(../fonts/KGGirlOnFire.ttf);
 }
 
+.modalheader {
+	font-size: 4vw;
+	color: #e26a8d;
+}
+
 body {
 		font-family: "KG Girl On Fire";
+		position: relative;
 }
 
 .portimages {
@@ -31,8 +37,14 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
+a:hover, a:active, a:focus {
+	color: #e26a8d;
 	text-decoration: none;
+}
+
+.modaldesc {
+	font-family: avenir, san-serif;
+	font-size: 2vw;	
 }
 
 section {
@@ -41,15 +53,27 @@ section {
 }
 
 h1 {
+	font-weight: bold;
 	font-size: 4vw;
+	text-shadow: 5px 2px 5px rgba(255, 255, 255, 1);
 	text-align: center;
 	color: #e26a8d;
-	margin-top: 0px;
+	margin-top: 20px;
+	padding-top: 20px;
 	margin-bottom: 0px;
+}
+
+.strokeme {
+    text-shadow:
+    -1px -1px 8px white,
+    1px -1px 8px white,
+    -1px 1px 8px white,
+    1px 1px 8px white;  
 }
 
 h2 {
 	font-size: 2.5vw;
+	color: #707070;
 }
 
 #overallcontainer {
@@ -78,7 +102,7 @@ h2 {
 .bar {
 	float: left;
 	font-family: "KG Girl On Fire";
-	font-size: 3vw;
+	font-size: 15px;
 	margin: 0;
 	padding: 0;
 }
@@ -99,7 +123,7 @@ h2 {
 	display: block;
 	color: white;
 	text-align: center;
-	padding: 1vw 1vw;
+	padding: 3px 3px;
 	-webkit-transition: background-color 4s;
 	text-decoration: none;
 }
@@ -111,7 +135,9 @@ h2 {
 
 .topgraphic {
 	width: 100%;
-	margin-top: 3vw;
+	position: fixed;
+	/*margin-top: 3vw;*/
+	z-index: -1;
 }
 
 .bottombar {
@@ -122,5 +148,5 @@ h2 {
 }
 
 .indexbottombar {
-		max-width: 1050px;
+	max-width: 1050px;
 }
