@@ -1,7 +1,9 @@
-<div>
-	<a href="{{section.link}}">
-	<h2>{{section.headline}}</h2>
-		<img class="portimages" ng-src="{{section.photo}}"/>
-	</a>
-	<span>{{section.description}}</span>
-</div>
+<div ng-controller="ModalDemoCtrl as $ctrl" class="modal-demo">
+	<span>
+		<button type="button" class="btn btn-default prettybut" ng-click="$ctrl.open(section.link, section.description, section.headline)">
+			<h2>{{section.headline}}</h2>
+		</button>
+	</span>
+	<a href="{{section.link}}"><img class="portimages" ng-src="{{section.photo}}"/></a>
+<!-- 	<span>{{section.description}}</span>
+ --></div>
