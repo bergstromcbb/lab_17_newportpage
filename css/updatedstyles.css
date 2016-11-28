@@ -6,11 +6,15 @@
 body {
 		font-family: "KG Girl On Fire";
 		position: relative;
+		margin-top: 0;
+		line-height: 1.42857143;
 }
 
 a {
 	color: #e26a8d;
 	text-decoration: none;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 a:hover, a:active, a:focus {
@@ -19,8 +23,9 @@ a:hover, a:active, a:focus {
 }
 
 section {
-	border-style: solid;
-	border-color: black;
+	display: inline-block;
+	/*border-style: solid;*/
+	/*border-color: black;*/
 }
 
 div {
@@ -40,19 +45,37 @@ h1 {
 }
 
 h2 {
+	font-family: "KG Girl On Fire";
+	margin: 0;
+	font-weight: bold;
 	font-size: 2.5vw;
 	color: #707070;
 }
 
+h3 {
+	font-family: "KG Girl On Fire";
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.designer {
+	font-family: "KG Girl On Fire";
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 8px;
+}
+
 .fillertext {
+	padding-top: 40px;
 	font-family: "avenir";
 	line-height: 1.25;
-	font-size: 1.25vw;
+	font-size: 1.75vw;
 }
 
 /* resume specific styling */
 
 .resumename {
+	font-family: "KG Girl On Fire";
 	text-align: left;
 	color: #e26a8d;
 	margin-bottom: 0px;
@@ -96,6 +119,7 @@ h2 {
 /*header white drop shadow*/
 
 .strokeme {
+	padding-top: 41px;
     text-shadow:
     -1px -1px 8px white,
     1px -1px 8px white,
@@ -195,6 +219,11 @@ li a:hover {
 
 /* index specific styling */
 
+#indexCenter {
+	text-align: center;
+	text-align: center;
+}
+
 .homebuttons {
 	background-image: url("../images/circle.png");
 	background-repeat: no-repeat;
@@ -206,6 +235,7 @@ li a:hover {
 
 .indextopgraphic {
 	margin-top: 0;
+	padding-top: 0;
 }
 
 .middlelinks {
@@ -213,11 +243,17 @@ li a:hover {
 	color: white;
 	font-family: "KG Girl On Fire";
 	font-size: 45px;
+	margin-top: 1vw;
 }
+
+.indextopgraphic{
+		margin-top: 0;
+	}
 
 /* headers */
 
 .name{
+	padding-top: 150px;	
 	width: 100%;
 	color:#e26a8d;
 	text-align: center;
